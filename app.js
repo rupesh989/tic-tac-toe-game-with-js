@@ -40,8 +40,7 @@ boxes.forEach((box) => {
                 box.innerText="O";
             //  box.classList.remove("box");
             //  box.classList.add(".xval");
-                turnO=false;
-                
+                turnO=false;                
             }
             else{
                 box.innerText="X";
@@ -54,3 +53,55 @@ boxes.forEach((box) => {
             checkWinner();
         });
 });  
+
+const disableBoxes = () =>{
+    for (let box of boxes){
+        box.disabled=true;
+    }
+};
+
+const enableBoxes =() =>{
+    for (let box of boxes){
+        box.disabled=false;
+        box.innerText="";
+    }
+};
+
+const showWinner=(winner)=>{
+    msg.innerText=`" ${winner} " is Winner, Congratulations`;
+    msgContainer.classList.remove("hide");
+    disableBoxes();
+};
+
+// const showDraw=(draw)=>{
+//     msg.innerText=`" ${draw} " is Draw, play agian`;
+//     msgContainer.classList.remove("hide");
+//     disableBoxes();
+// };
+
+const checkWinner=()=>{
+    for (let pattern of winPatterns){
+
+            let pos1val=boxes[pattern[0]].innerText;    
+            let pos2val=boxes[pattern[1]].innerText;
+            let pos3val=boxes[pattern[2]].innerText;
+        
+            if (pos1val != "" &&
+                pos2val != "" &&
+                pos3val != "" )
+
+                    if (pos1val === pos2val &&
+                        pos2val === pos3val){
+
+                        // console.log("winner",pos1val);
+                        showWinner(pos1val);
+                    }
+                else{
+                        // console.log("lose"); 
+                        //showDraw();
+                    }    
+    };
+};
+
+newGameBtn.addEventListener("click",resetGame);
+  resetbtn.addEventListener("click", resetGame);
