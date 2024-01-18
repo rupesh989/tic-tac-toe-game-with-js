@@ -8,6 +8,8 @@ New game Button starts new game from begining
 
 # Starting State
 ![initial tictactoe](https://github.com/rupesh989/tic-tac-toe-game-with-js/assets/155056700/92af446f-3860-4b0c-ac17-d2e853d2522e)
+
+![draw ticktactoe](https://github.com/rupesh989/tic-tac-toe-game-with-js/assets/155056700/72b13c95-2f6a-4a0e-ad9b-c3e70b57d7c0)
 # Winner is "X"
 ![X is winner](https://github.com/rupesh989/tic-tac-toe-game-with-js/assets/155056700/b75530da-0ac7-432f-a6d9-b430662b6390)
 # Winner is "O"
