@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
 }
-
 body{
     background-color:rgb(47, 130, 208);
     text-align: center;
-
 } 
 #h1Id{
     padding: 0;
@@ -14,7 +12,6 @@ body{
     color: #072909;
 
 }
-
 .container{
     height: 70vh;
     background-color:rgb(47, 130, 208) ;   
@@ -33,7 +30,6 @@ body{
     gap: 1.5vmin;
 
 }
-
 .box{
     height: 18vmin;
     width: 18vmin;
@@ -46,3 +42,65 @@ body{
     cursor:  pointer;
 
 }
+#reset-btn{
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(1, 1, 19, 0.3);
+    font-size: 1.5rem;
+    color: #120302;
+    cursor:  pointer;
+}
+#new-game-btn{
+    
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(1, 1, 19, 0.3);
+    font-size: 1.5rem;
+    color: #120302;
+    cursor:  pointer;
+
+}
+#msg{
+    color: #3c0c43;
+    font-size: 10vmin;
+}
+
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+
+}
+.hide{
+    display: none;
+ }
+ /*
+.zero{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(1, 1, 19, 0.3);
+    font-size: 8vmin;
+    background-color: #aff068;
+    color: rgb(145, 24, 231);
+    cursor:  pointer;
+}
+.xval{
+ height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(1, 1, 19, 0.3);
+    font-size: 8vmin;
+    background-color: #aff068;
+     color: #fcf9f9;
+    cursor:  pointer; 
+} */
