@@ -28,3 +28,29 @@ const resetGame = ()=>{
     enableBoxes();
     msgContainer.classList.add("hide");
 }
+
+boxes.forEach((box) => {
+
+    // console.log(element);
+        box.addEventListener("click",()=>{
+            // console.log("box was clicked");
+            // box.innerText="asdf";
+
+            if (turnO){
+                box.innerText="O";
+            //  box.classList.remove("box");
+            //  box.classList.add(".xval");
+                turnO=false;
+                
+            }
+            else{
+                box.innerText="X";
+             // box.classList.add(".xval");
+             // box.classList.remove("box");
+                turnO=true;                
+            }
+            box.disabled =true;
+
+            checkWinner();
+        });
+});  
